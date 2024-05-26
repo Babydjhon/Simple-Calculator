@@ -1,37 +1,6 @@
 """
 
-@Author: Pranta Sarker
-Institute: North East University Bangladesh
-Language: Python
-Version: 3.x
-Platfrom: Pycharm Community Version
 
-"""
-
-
-from tkinter import *;
-from tkinter import messagebox;
-
-def actionauthor():
-    messagebox.showinfo("Author", "Pranta Sarker\nBatch: 6th\nDepartment: CSE\nNorth East University Bangladesh")
-
-#Check weather the input string is a number or not
-def is_number(s):
-    if(s != ''):
-        if (s.replace('.', '', 1).isdigit()):
-            return True
-        if (s.isdigit()):
-            return True;
-        if s[0] in ['-', '+', '.', '0', ' ']:
-            if (s[1] == '.'):
-                if (s[2:].isdigit()):
-                    return True
-            if (s[1] == '0' and s[2] == '.'):
-                if (s[3:].isdigit()):
-                    return True
-            if s[1:].isdigit():
-                return True;
-        return False;
 
 def casting(num):
     if('.' in num):
@@ -47,7 +16,7 @@ def actionPlus():
 
     Showtemplabel.config(fg='red', bg='#9ed8ee')
     Showtemplabel.insert(0, 'Summation');
-    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+    Showtemplabel.place(relx=0.4, rely=0.4, anchor='center')
     ans = "0";
     Showlabel.insert(0, ans);
     Showlabel.place(relx=0.5, rely=0.6, anchor='center')
@@ -79,7 +48,7 @@ def actionMinus():
 
     Showtemplabel.config(fg='green', bg='#ece7e2')
     Showtemplabel.insert(0, 'Subtraction');
-    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+    Showtemplabel.place(relx=0.4, rely=0.4, anchor='center')
 
     ans = "0";
 
