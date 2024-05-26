@@ -82,7 +82,7 @@ def actionMul():
 
     Showtemplabel.config(fg='blue', bg='#cacba9')
     Showtemplabel.insert(0, 'Multiplication');
-    Showtemplabel.place(relx=0.5, rely=0.5, anchor='center')
+    Showtemplabel.place(relx=0.4, rely=0.4, anchor='center')
 
     ans = "0"
 
@@ -113,7 +113,7 @@ def actionDiv():
     Showtemplabel.delete(0, END);
     Showlabel.delete(0, END)
 
-    Showtemplabel.delete(0, END);
+    Showtemplabel.delete(1, END);
     Showlabel.delete(0, END)
 
     Showtemplabel.config(fg='yellow', bg='#8dad96')
